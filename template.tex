@@ -129,7 +129,9 @@
 \section{Projects}
   \resumeSubHeadingListStart
   ((* for proj in projects *))
-    \resumeSubSubheading{\href{((( proj.url )))}: {((( proj.name )))}}{((( proj.description )))}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small\href{((( proj.url )))}{((( proj.name )))}} & \textit{\small ((( proj.description )))} \\
+    \end{tabular*}\vspace{-5pt}
   ((* endfor *))
   \resumeSubHeadingListEnd
 
