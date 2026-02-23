@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3-pip \
     # ---- Utilities ----
     make \
+    git \
     ca-certificates \
     && python3 -m venv $VIRTUAL_ENV \
     && pip install --upgrade pip \
