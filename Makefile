@@ -17,3 +17,4 @@ compile:
 
 clean:
 	pdflatex -c $(TEX_FILE)
+	rm -rf output/*.aux output/*.log output/*.out output/*.pdf
