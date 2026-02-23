@@ -119,9 +119,7 @@
       { ((( job.role ))) }{ ((( job.dates ))) }
       \resumeItemListStart
       ((* for item in job.achievements *))
-        \begin{markdown}
-            \resumeItem{ ((( item ))) }
-        \end{markdown}
+            \resumeItem{ ((( item | safe ))) }
       ((* endfor *))
       \resumeItemListEnd
   ((* endfor *))
