@@ -29,6 +29,8 @@ work:
 
 projects:
   - name: QuantSoftware Toolkit
+    link: ""
     description: Open source Python library for financial analysis.
   - name: GitHub Visualization
+    link: ""
     description: D3-based Git log visualization tool.
