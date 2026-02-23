@@ -6,6 +6,7 @@ on:
       - 'Dockerfile'
       - '.github/workflows/docker-build.yml'
       - 'Makefile'
+      - '.dockerignore'
     branches: [ master ]
 
 jobs:
