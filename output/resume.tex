@@ -1,55 +1,132 @@
+%-------------------------
+% Resume in LateX
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
 \documentclass[letterpaper,11pt]{article}
-\usepackage[hidelinks]{hyperref}
-\usepackage{enumitem}
-\usepackage{tabularx}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage[margin=1in]{geometry}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 \begin{document}
 
-% HEADER
-\begin{tabularx}{\textwidth}{X r}
-\textbf{\Large Subhomoy Roy Choudhury} & \textbf{\large Software Engineer} \\
-\multicolumn{2}{X}{ Experienced software engineer with a strong background in backend development and distributed systems. } \\
-\multicolumn{2}{X}{
-\href{mailto:subhomoyrchoudhury@gmail.com}subhomoyrchoudhury@gmail.com \,|\, 
-\href{  }{  } \,|\, 
-Mobile: +91 9163855365
-} \\
-\end{tabularx}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{{ basics.website }}{\Large {{ basics.name }}}} & Email: \href{mailto:{{ basics.email }}}{{ basics.email }}\\
+  \href{{ basics.website }}{{ basics.website | replace("https://","") | replace("http://","") }} & Mobile: \href{tel:{{ basics.phone }}}{{ basics.phone }} \\
+\end{tabular*}
 
-\section*{Education}
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+  {% for edu in education %}
+    \resumeSubheading
+      { {{ edu.institution }} }{ {{ edu.location }} }
+      { {{ edu.degree }}; GPA: {{ edu.gpa }} }{ {{ edu.dates }} }
+  {% endfor %}
+  \resumeSubHeadingListEnd
 
-\textbf Insitute of Engineering and Management, Kolkata \hfill West Bengal, India \\
-Bachelor of Technology in Computer Science and Engineering; GPA: 3.66 (9.34/10.0) \hfill Aug 2018 -- July 2022 \\[6pt]
-
-
-\section*{Experience}
-
-\textbf Mott MacDonald \hfill Bangalore, India \\
-Digital Engineer \hfill September 2024 -- Present
-\begin{itemize}[leftmargin=*]
-
-\item \textbf Worked on APIs and performance for TPU training.
-
-\end{itemize}
-
-\textbf Fynd \hfill Bangalore, India \\
-Software Development Engineer 1 \hfill July 2022 -- September 2024
-\begin{itemize}[leftmargin=*]
-
-\item \textbf Built scalable notification service.
-
-\end{itemize}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  {% for job in work %}
+    \resumeSubheading
+      { {{ job.company }} }{ {{ job.location }} }
+      { {{ job.role }} }{ {{ job.dates }} }
+      \resumeItemListStart
+      {% for item in job.achievements %}
+        \resumeItem{ {{ item }} }
+      {% endfor %}
+      \resumeItemListEnd
+  {% endfor %}
+\resumeSubHeadingListEnd
 
 
-\section*{Projects}
-\begin{itemize}[leftmargin=*]
-
-\item \textbf QuantSoftware Toolkit: Open source Python library for financial analysis.
-
-\item \textbf GitHub Visualization: D3-based Git log visualization tool.
-
-\end{itemize}
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  {% for proj in projects %}
+    \resumeSubItem{ {{ proj.name }} }
+      { {{ proj.description }} }
+  {% endfor %}
+  \resumeSubHeadingListEnd
 
 \end{document}

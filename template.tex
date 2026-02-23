@@ -95,18 +95,11 @@
 \end{tabular*}
 
 %-----------EDUCATION-----------------
-\section*{Education}
-{% for edu in education %}
-\textbf {{ edu.institution }} \hfill {{ edu.location }} \\
-{{ edu.degree }}; GPA: {{ edu.gpa }} \hfill {{ edu.dates }} \\[6pt]
-{% endfor %}
-
-%-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
   {% for edu in education %}
     \resumeSubheading
-      {}{ {{ edu.location }} }
+      { {{ edu.institution }} }{ {{ edu.location }} }
       { {{ edu.degree }}; GPA: {{ edu.gpa }} }{ {{ edu.dates }} }
   {% endfor %}
   \resumeSubHeadingListEnd
