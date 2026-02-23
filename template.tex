@@ -1,0 +1,43 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+% HEADER
+\begin{tabularx}{\textwidth}{X r}
+    \textbf{\Large {{ basics.name }}} & \textbf{\large {{ basics.title }}} \\
+    \multicolumn{2}{X}{ {{ basics.summary }} } \\
+    \href{mailto:{{ basics.email }}}{{ basics.email }} \,|\, 
+    \href{{ basics.website }}{{ basics.website }} \,|\, 
+    Mobile: {{ basics.phone }} & \\
+\end{tabularx}
+
+\section*{Education}
+{% for edu in education %}
+\textbf {{ edu.institution }} \hfill {{ edu.location }} \\
+{{ edu.degree }}; GPA: {{ edu.gpa }} \hfill {{ edu.dates }} \\[6pt]
+{% endfor %}
+
+\section*{Experience}
+{% for job in work %}
+\textbf {{ job.company }} \hfill {{ job.location }} \\
+{{ job.role }} \hfill {{ job.dates }}
+\begin{itemize}[leftmargin=*]
+{% for item in job.achievements %}
+\item \textbf {{ item }}
+{% endfor %}
+\end{itemize}
+{% endfor %}
+
+\section*{Projects}
+\begin{itemize}[leftmargin=*]
+{% for proj in projects %}
+\item \textbf{{ proj.name }}: {{ proj.description }}
+{% endfor %}
+\end{itemize}
+
+\end{document}

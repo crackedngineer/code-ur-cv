@@ -1,0 +1,37 @@
+basics:
+  name: Subhomoy Roy Choudhury
+  title: Software Engineer
+  summary: Experienced software engineer with a strong background in backend development and distributed systems. Passionate about building scalable and efficient software solutions.
+  website: https://subhomoyroychoudhury.com/
+  email: subhomoyrchoudhury@gmail.com
+  phone: "+91 9163855365"
+
+education:
+  - institution: Insitute of Engineering and Management, Kolkata
+    location: West Bengal, India
+    degree: Bachelor of Technology in Computer Science and Engineering
+    gpa: "3.66 (9.34/10.0)"
+    dates: "Aug 2018 -- July 2022"
+
+work:
+  - company: Mott MacDonald
+    location: Bangalore, India
+    role: Digital Engineer
+    dates: "September 2024 -- Present"
+    achievements:
+      - Worked on APIs and performance for TPU training.
+      - Contributed to unified batch and streaming pipeline framework.
+
+  - company: Coursera
+    location: Mountain View, CA
+    role: Senior Software Engineer
+    dates: "Jan 2014 -- Oct 2016"
+    achievements:
+      - Built scalable notification service.
+      - Designed recommendation infrastructure.
+
+projects:
+  - name: QuantSoftware Toolkit
+    description: Open source Python library for financial analysis.
+  - name: GitHub Visualization
+    description: D3-based Git log visualization tool.
