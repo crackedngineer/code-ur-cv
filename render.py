@@ -1,5 +1,4 @@
-from asyncio import subprocess
-
+import subprocess
 import yaml
 from jinja2 import Environment, FileSystemLoader
 
