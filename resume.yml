@@ -1,12 +1,12 @@
 basics:
   name: Subhomoy Roy Choudhury
   title: Software Engineer
-  summary: Experienced software engineer with a strong background in backend development and distributed systems.
   email: subhomoyrchoudhury@gmail.com
   phone: "+91 9163855365"
+  website: "https://github.com/crackedngineer/"
 
 education:
-  - institution: Insitute of Engineering and Management, Kolkata
+  - institution: Institute of Engineering and Management, Kolkata
     location: West Bengal, India
     degree: Bachelor of Technology in Computer Science and Engineering
     gpa: "3.66 (9.34/10.0)"
