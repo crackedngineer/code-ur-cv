@@ -9,11 +9,13 @@
 
 % HEADER
 \begin{tabularx}{\textwidth}{X r}
-\textbf {\Large {{ basics.name }}} & \textbf {\large {{ basics.title }}} \\
+\textbf{\Large {{ basics.name }}} & \textbf{\large {{ basics.title }}} \\
 \multicolumn{2}{X}{ {{ basics.summary }} } \\
-\href {mailto:{{ basics.email }}}{{ basics.email }} \,|\, 
+\multicolumn{2}{X}{
+\href{mailto:{{ basics.email }}}{{ basics.email }} \,|\, 
 \href{ {{ basics.website }} }{ {{ basics.website | replace("https://","") | replace("http://","") }} } \,|\, 
-Mobile: {{ basics.phone }} & \\
+Mobile: {{ basics.phone }}
+} \\
 \end{tabularx}
 
 \section*{Education}
