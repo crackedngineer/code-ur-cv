@@ -90,7 +90,9 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-
+\newcommand{\technologies}[1]{
+\noindent\textbf{Technologies:} #1
+}
 \begin{document}
 
 %----------HEADING-----------------
@@ -109,21 +111,37 @@
   
     \resumeSubheading
       { Institute of Engineering and Management, Kolkata }{ West Bengal, India }
-      { Bachelor of Technology in Electronics and Communication; GPA: 3.66 (9.34/10.0) }{ Aug 2018 -- July 2022 }
+      { Bachelor of Technology in Electronics and Communication; GPA: 3.74 (9.34/10.0) }{ Aug 2018 -- July 2022 }
     
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
+%   \resumeSubHeadingListStart
   
     \resumeSubheading
       { Mott MacDonald }{ Bangalore, India }
       { Digital Engineer }{ September 2024 -- Present }
       \resumeItemListStart
       
-            \resumeItem{ Worked on \textbf{APIs} and performance for TPU training. }
+            \resumeItem{ Currently working with the \textbf{Platform} team to maintain their
+DevOps Platform. }
       
+            \resumeItem{ Working on \textbf{Plural}
+(\href{https://www.plural.sh/}{\emph{https://www.plural.sh/}}) using
+Terraform. }
+      
+            \resumeItem{ Worked on the Kubernetes operator using \textbf{Golang} responsible for
+maintaining the creation of project tiles inside the platform. }
+      
+            \resumeItem{ Developed the end-to-end automation of the project and namespace
+creation system from Service Now to Plural. Reduced the SLAs for the
+requests to \textbf{80\%}. }
+      
+            \resumeItem{ \textbf{Technologies} :- Python, Golang, Terraform, K8s, K8s operator,
+Azure Blob, Azure PostgresDB, Storage Accounts etc. }
+      
+      \resumeItem{ \technologies{Python, Golang, Terraform, Kubernetes, Azure Blob, Azure PostgresDB, Storage Accounts } }
       \resumeItemListEnd
   
     \resumeSubheading
@@ -131,18 +149,37 @@
       { Software Development Engineer 1 }{ July 2022 -- September 2024 }
       \resumeItemListStart
       
-            \resumeItem{ Built \textbf{scalable} notification service. }
+            \resumeItem{ \textbf{Platform Core Catalog Service} - Directly responsible for
+maintaining Microservices which supported sellers in managing product
+catalogs and inventory for the B2B business JioMart Partners built on
+top of Fynd Platform. }
       
+            \resumeItem{ Contributed significantly to building a new product
+\textbf{Catalog.Cloud} from the ground up. Made substantial
+contributions from its conceptualization to full-fledged implementation. }
+      
+            \resumeItem{ Developed \textbf{RBAC} which powers the \textbf{authentication} and
+\textbf{authorization} system assigning the user with custom roles }
+      
+            \resumeItem{ Developed the \textbf{product ingestion pipelines} using \textbf{Apache
+Kafka} where any seller can import pre-existing catalogs in very minimal
+time and with minimum configurations. }
+      
+            \resumeItem{ Contributed to the Front-end development of respective features and the
+overall optimisation of the project, resulting in \textbf{30\%
+improvement in performance}. }
+      
+      \resumeItem{ \technologies{Python, NodeJS, NextJS, Kafka, Postgres, MongoDB, Redis, Nginx Ingress } }
       \resumeItemListEnd
   
-\resumeSubHeadingListEnd
+% \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
   
-    \resumeItem{\textbf{QuantSoftware Toolkit}: Open source Python library for financial analysis.}
+    \resumeItem{\textbf{iLoveGithub}: Open source Python library for financial analysis.}
   
     \resumeItem{\textbf{GitHub Visualization}: D3-based Git log visualization tool.}
   
