@@ -147,10 +147,12 @@
 \resumeSubHeadingListStart
 ((* for proj in projects *))
   \resumeProjectHeading
-    {\textbf{ ((( proj.name ))) }((* if proj.technologies *)) $|$ \emph{((( proj.technologies | join(', ') )))}((* endif *))}
-    {June 2020 -- Present}
+    {\href{ ((( proj.link ))) }{ \textbf{((( proj.name ))) } }((* if proj.technologies *)) $|$ \emph{((( proj.technologies | join(', ') )))}((* endif *))}
+    {((( proj.dates )))}
   \resumeItemListStart
-    \resumeItem{((( proj.description )))}
+    ((* for item in proj.description *))
+    \resumeItem{((( item | safe )))}
+    ((* endfor *))
   \resumeItemListEnd
 ((* endfor *))
 \resumeSubHeadingListEnd
