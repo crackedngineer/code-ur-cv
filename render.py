@@ -1,3 +1,4 @@
+import re
 import subprocess
 import yaml
 from jinja2 import Environment, FileSystemLoader
@@ -21,6 +22,12 @@ for job in data["work"]:
     job["achievements"] = [
         md_to_latex(item) for item in job["achievements"]
     ]
+    
+def regex_replace(s, find, replace):
+    """A non-optimal implementation of a regex filter"""
+    # Use re.sub for regex replacement.
+    # The 'r' prefix ensures raw strings for correct backslash handling.
+    return re.sub(r"{}".format(find), r"{}".format(replace), s)
 
 # Load LaTeX template
 env = Environment(
@@ -32,6 +39,7 @@ env = Environment(
     comment_start_string="((#",
     comment_end_string="#))",
 )
+env.filters["regex_replace"] = regex_replace
 template = env.get_template("template.tex")
 
 # Render

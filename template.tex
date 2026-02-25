@@ -94,10 +94,14 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{((( basics.website )))}{\Large ((( basics.name )))}} & Email: \href{mailto:((( basics.email )))}{((( basics.email )))}\\
-  \href{((( basics.website )))}{((( basics.website | replace("https://","") | replace("http://","") )))} & Mobile: \href{tel:((( basics.phone )))}{((( basics.phone )))} \\
-\end{tabular*}
+\begin{center}
+    {\LARGE \textbf{((( basics.name )))}} \\[4pt]
+    \normalsize
+    \href{mailto:((( basics.email )))}{((( basics.email )))} $|$ 
+    \href{tel:((( basics.phone )))}{((( basics.phone )))} $|$ 
+    \href{((( "https://www." + basics.github )))}{((( basics.github )))} $|$ 
+    \href{((( "https://www." + basics.linkedin )))}{((( basics.linkedin )))}
+\end{center}
 
 %-----------EDUCATION-----------------
 \section{Education}
