@@ -19,7 +19,7 @@ def regex_replace(s, find, replace):
     return re.sub(r"{}".format(find), r"{}".format(replace), s)    
 
 # Load YAML
-with open("resume.yml") as f:
+with open("config.yml") as f:
     data = yaml.safe_load(f)
     
 # Formatting resume Data
