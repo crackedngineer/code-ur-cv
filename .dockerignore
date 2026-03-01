@@ -1,0 +1,8 @@
+.devcontainer/*
+.github/*
+.gitignore
+README.md
+render.py
+resume.yml
+template.tex
+Makefile

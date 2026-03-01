@@ -1,0 +1,54 @@
+name: Build PDF
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'resume.yml'
+      - 'template.tex'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  packages: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: ghcr.io/${{ github.repository_owner }}/latex-ci:latest
+      credentials:
+        username: ${{ github.actor }}
+        password: ${{ secrets.GH_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Mark workspace safe
+        run: git config --global --add safe.directory $GITHUB_WORKSPACE
+
+      - name: Install Python deps
+        run: pip install jinja2 pyyaml
+
+      - name: Render template
+        run: python render.py
+
+      - name: Compile LaTeX
+        run: make compile
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add output/resume.pdf output/resume.tex
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit"
+          else
+            git commit -m "chore(resume): update PDF"
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
