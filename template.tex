@@ -115,6 +115,13 @@
 
 \end{center}
 
+%----------SUMMARY-----------------
+\section{Summary}
+\resumeSubHeadingListStart
+  \item\small
+    ((( summary | safe ))) \\
+\resumeSubHeadingListEnd
+
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
@@ -147,13 +154,24 @@
 \resumeSubHeadingListStart
 ((* for proj in projects *))
   \resumeProjectHeading
-    {\href{ ((( proj.link ))) }{ \textbf{((( proj.name ))) } }((* if proj.technologies *)) $|$ \emph{((( proj.technologies | join(', ') )))}((* endif *))}
+    {\href{ ((( proj.link ))) }{ \textbf{((( proj.name )))}}((* if proj.technologies *)) $|$ \emph{((( proj.technologies | join(', ') )))}((* endif *))}
     {((( proj.dates )))}
   \resumeItemListStart
     ((* for item in proj.description *))
     \resumeItem{((( item | safe )))}
     ((* endfor *))
   \resumeItemListEnd
+((* endfor *))
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+((* for category, items in skills.items() *))
+  \item\small 
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r} 
+    \textbf{ ((( category|capitalize )))}: {((( items | join(", ") )))} \\
+  \end{tabular*}\vspace{-7pt}
 ((* endfor *))
 \resumeSubHeadingListEnd
 

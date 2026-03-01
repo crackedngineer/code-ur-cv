@@ -6,11 +6,17 @@ website: "https://github.com/crackedngineer/"
 github: "github.com/crackedngineer"
 linkedin: "linkedin.com/in/subhomoy-roy-choudhury"
 
+summary: >
+  Backend-focused Software Engineer with 3+ years of experience designing and shipping
+  low-latency, high-availability APIs and distributed systems. Strong expertise in Python
+  and Golang, building scalable backend services, event-driven pipelines, and production-
+  grade cloud-native systems. Proven ability to own features end-to-end in fast-paced environments.
+
 education:
   - institution: Institute of Engineering and Management, Kolkata
     location: West Bengal, India
     degree: Bachelor of Technology in Electronics and Communication
-    gpa: "3.74 (9.34/10.0)"
+    gpa: "9.34/10.0"
     dates: "Aug 2018 -- July 2022"
 
 work:
@@ -19,89 +25,93 @@ work:
     role: Digital Engineer
     dates: "September 2024 -- Present"
     achievements:
-      - Currently working with the **Platform** team to maintain their DevOps Platform.
-      - Working on **Plural** ([_https://www.plural.sh/_](https://www.plural.sh/)) using Terraform.
-      - Worked on the Kubernetes operator using **Golang** responsible for maintaining the creation of project tiles inside the platform.
-      - Developed the end-to-end automation of the project and namespace creation system from Service Now to Plural. Reduced the SLAs for the requests to **80%**.
-    technologies: 
+      - Designed and maintained backend platform services supporting Kubernetes-based DevOps infrastructure.
+      - Built a Kubernetes operator in Golang to automate project provisioning and namespace lifecycle management.
+      - Engineered end-to-end automation from ServiceNow to Plural to Kubernetes, reducing request SLA by 80%.
+      - Provisioned infrastructure using Terraform and managed Azure services including Blob Storage and PostgresDB.
+    technologies:
       - Python
       - Golang
-      - Terraform
       - Kubernetes
-      - Azure Blob
-      - Azure PostgresDB
-      - Storage Accounts
+      - Terraform
+      - Azure
+      - PostgreSQL
 
   - company: Fynd
     location: Bangalore, India
     role: Software Development Engineer 1
     dates: "July 2022 -- September 2024"
     achievements:
-      - "**Platform Core Catalog Service** - Directly responsible for maintaining Microservices which supported sellers in managing product catalogs and inventory for the B2B business JioMart Partners built on top of Fynd Platform."
-      - Contributed significantly to building a new product **Catalog.Cloud** from the ground up. Made substantial contributions from its conceptualization to full-fledged implementation.
-      - Developed **RBAC** which powers the **authentication** and **authorization** system assigning the user with custom roles
-      - Developed the **product ingestion pipelines** using **Apache Kafka** where any seller can import pre-existing catalogs in very minimal time and with minimum configurations.
-      - Contributed to the Front-end development of respective features and the overall optimisation of the project, resulting in **30% improvement in performance**.
+      - Designed and maintained scalable REST APIs powering the Core Catalog Service for JioMart Partners (B2B).
+      - Built RBAC-based authentication and authorization systems to enforce secure access control.
+      - Developed high-throughput product ingestion pipelines using Apache Kafka for low-latency bulk imports.
+      - Optimized backend queries and caching layers (Redis), improving system performance by 30%.
+      - Collaborated cross-functionally with product and frontend teams to ship production-ready features.
     technologies:
       - Python
       - NodeJS
-      - NextJS
       - Kafka
-      - Postgres
+      - PostgreSQL
       - MongoDB
       - Redis
-      - Nginx Ingress
+      - Nginx
 
 projects:
   - name: iLoveGithub
-    description: 
-      - "**Architected** and **built** a scalable backend platform in Python to transform GitHub repositories into AI-powered insights and developer utilities."
-      - "**Designed** RESTful services, authentication (Supabase), and containerized workloads using Docker for reproducible deployments."
-      - "**Implemented** automated release and CI workflows to support continuous delivery and extensible system design."
     link: "https://github.com/crackedngineer/iLoveGithub"
     dates: "May 2025 -- Present"
-    technologies: 
-      - NextJS
+    description:
+      - Architected scalable backend services in Python to transform GitHub repositories into AI-powered utilities.
+      - Designed RESTful APIs with authentication and containerized deployments using Docker.
+      - Implemented CI/CD pipelines and automated release workflows for production-grade delivery.
+    technologies:
       - Python
+      - NextJS
       - Supabase
       - Docker
       - CI/CD
-      
-  - name: iLoveGithub Extension
-    description:
-      - "**Built** a TypeScript-based Chrome extension integrating securely with backend APIs to deliver real-time GitHub insights."
-      - "**Architected** secure client–server communication with robust token handling and efficient API consumption."
-      - "**Implemented** CI/CD automation using GitHub Actions to streamline build and release workflows."
-    link: "https://github.com/crackedngineer/iLoveGithub-extension"
-    dates: "September 2025 -- Present"
-    technologies: 
-      - Typescript
-      - Webpack
-      - Github Actions
-      - REST APIs
 
   - name: linkplant
-    description: 
-      - "**Built** a GitHub Action to automate static site generation and deployment using Python and Jinja templating."
-      - "**Designed** CI/CD workflows enabling zero-infrastructure hosting through GitHub-native runners."
-      - "**Abstracted** deployment logic into reusable automation pipelines to reduce manual configuration."
     link: "https://github.com/crackedngineer/linkplant"
     dates: "November 2025 -- Present"
+    description:
+      - Built a GitHub Action to automate static site generation and deployment using Python and Jinja.
+      - Designed reusable CI/CD workflows enabling zero-infrastructure hosting.
     technologies:
-      - Python 
+      - Python
       - Jinja
-      - CI/CD
+      - GitHub Actions
 
   - name: Proxmox Homelab
     link: "https://github.com/crackedngineer/homelab-infrastructure"
-    description: 
-      - "**Designed** and **operated** production-like infrastructure using Proxmox with Infrastructure-as-Code principles (Terraform)."
-      - "**Deployed** and **managed** Kubernetes clusters with GitOps workflows using ArgoCD."
-      - "**Implemented** containerized workloads, secure networking (Tailscale), and cluster-level automation."
     dates: "May 2023 -- Present"
+    description:
+      - Designed and managed Kubernetes clusters using Terraform and GitOps (ArgoCD).
+      - Implemented containerized workloads with secure networking and automation-first infrastructure practices.
     technologies:
       - Terraform
-      - Docker
-      - argocd
-      - Tailscale
       - Kubernetes
+      - Docker
+      - ArgoCD
+      - Tailscale
+
+skills:
+  backend:
+    - Python
+    - Golang
+    - NodeJS
+    - REST APIs
+    - Microservices
+  databases:
+    - PostgreSQL
+    - MongoDB
+    - Redis
+  infrastructure:
+    - Kubernetes
+    - Docker
+    - Terraform
+    - Azure
+    - CI/CD
+    - GitOps
+  messaging:
+    - Apache Kafka

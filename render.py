@@ -23,6 +23,7 @@ with open("config.yml") as f:
     data = yaml.safe_load(f)
     
 # Formatting resume Data
+data["summary"] = md_to_latex(data["summary"])
 for job in data["work"]:
     job["achievements"] = [
         md_to_latex(item) for item in job["achievements"]
