@@ -62,7 +62,11 @@ runs:
     - name: Commit changes
       shell: bash
       run: |
-        git add ${{ inputs.output-pdf }} ${{ inputs.output-tex }}
+        cd "$GITHUB_WORKSPACE"
+
+        git add "${{ inputs.out-dir }}"/*.tex
+        git add "${{ inputs.out-dir }}"/*.pdf
+
         if git diff --cached --quiet; then
           echo "✅ No changes to commit"
         else
