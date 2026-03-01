@@ -50,7 +50,7 @@ runs:
         FILE_NAME="${{ inputs.file-name }}" \
         OUT_DIR="${{ inputs.out-dir }}" \
         ./build.sh
-      working-directory: "${{ github.action_path }}/src"
+      working-directory: ${{ github.action_path }}/src
       
 
     - name: Configure Git
