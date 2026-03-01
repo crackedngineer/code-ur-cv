@@ -32,12 +32,14 @@ runs:
       shell: bash
       run: |
         sudo apt-get update && sudo apt-get install -y --no-install-recommends \
-        texlive-latex-base \
-        texlive-latex-recommended \
-        texlive-latex-extra \
-        texlive-fonts-recommended \
-        texlive-xetex \
-        latexmk
+          texlive-latex-base \
+          texlive-latex-recommended \
+          texlive-latex-extra \
+          texlive-fonts-recommended \
+          texlive-xetex \
+          latexmk \
+          pandoc
+        sudo apt-get clean
 
     - name: Install Python deps
       shell: bash
