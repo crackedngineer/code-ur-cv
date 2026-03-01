@@ -24,7 +24,9 @@ def regex_replace(s, find, replace):
     return re.sub(r"{}".format(find), r"{}".format(replace), s)
 
 def fetch_template(type: str = "minimalist"):
-    template_path = Path(TEMPLATE_DIR) / f"{type}.tex"
+    BASE_DIR = Path(__file__).resolve().parent
+    TEMPLATES_DIR = BASE_DIR / "templates"
+    template_path = TEMPLATES_DIR / f"{type}.tex"
     if not template_path.exists():
         raise FileNotFoundError(f"Template file not found: {template_path}")
     return template_path
