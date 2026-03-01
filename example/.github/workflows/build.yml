@@ -15,7 +15,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
-      - uses: crackedngineer/resume@v0.0.1
+      - uses: crackedngineer/code-ur-cv@v0.0.1
         with:
           out-dir: "output"
           file-name: "config.yml"
