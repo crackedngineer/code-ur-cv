@@ -27,7 +27,7 @@ Whether you're a student, working professional, or researcher — write your det
 ## 🚀 Quickstart
 
 ```yaml
-# resume.yml
+# config.yml
 basic_details:
   name: Jane Doe
   email: jane@example.com
@@ -124,7 +124,7 @@ pdflatex is the LaTeX engine used to render the final PDF.
 | `minimalist` | Design roles, typography-forward |
 
 ```bash
-codeurcv generate resume.yml --template minimalist
+codeurcv generate config.yml --template minimalist
 ```
 
 ---
