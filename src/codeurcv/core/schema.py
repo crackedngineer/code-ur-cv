@@ -49,8 +49,3 @@ class ResumeConfig(BaseModel):
     work: List[Job] = Field(default_factory=list)
     projects: List[Project] = Field(default_factory=list)
     skills: List[Skill] = Field(default_factory=list)
-
-    @field_validator("filename")
-    @classmethod
-    def strip_pdf_extension(cls, v: str) -> str:
-        return v.removesuffix(".pdf")

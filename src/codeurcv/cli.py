@@ -58,7 +58,7 @@ def run(
 
     renderer = ResumeRenderer()
 
-    renderer.render(config_path=input, output_path=output, name=name, template=template)
+    renderer.render(config_path=input, output_dir=output, out_filename=name, template=template)
 
     console.print("[bold green]Done![/bold green]")
 
