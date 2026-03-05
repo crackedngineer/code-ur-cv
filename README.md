@@ -144,6 +144,8 @@ Automate resume generation on every push using the official GitHub Action.
   with:
     config-path: config.yml
     out-dir: output
+    template: minimalist
+    filename: john-doe-resume
 ```
 
 → [codeurcv-action on GitHub](https://github.com/crackedngineer/codeurcv-action) · [View on Marketplace](https://github.com/marketplace/actions/codeurcv-action)
