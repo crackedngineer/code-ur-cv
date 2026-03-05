@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.5.0](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.4.1...codeurcv-v0.5.0) (2026-03-05)
+
+
+### Features
+
+* Enhance Markdown support in resume schema and update MinimalistTemplate plugin ([44b7787](https://github.com/crackedngineer/codeurcv/commit/44b77877ae3be5ed6519d42ea7b5b4a60ff9f0d0))
+* Implement config loader for YAML and JSON files in renderer ([b9b0699](https://github.com/crackedngineer/codeurcv/commit/b9b06995cf7b4cf2b957e3fbc8c6e4c72d04251d))
+
 ## [0.4.1](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.4.0...codeurcv-v0.4.1) (2026-03-05)
 
 
