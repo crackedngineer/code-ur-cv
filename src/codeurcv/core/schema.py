@@ -20,27 +20,30 @@ class Education(ResumeSection):
     institution: str
     location: str
     degree: str
-    duration: str
+    year: int
     gpa: Optional[str] = None
     additional_information: List[str] = Field(default_factory=list)
 
 class Job(ResumeSection):
     company: str
     role: str
-    duration: str
+    start: str
+    end: Optional[str] = "Present"
+    location: Optional[str] = None
     achievements: List[str] = Field(default_factory=list)
     technologies: List[str] = Field(default_factory=list)
 
 class Project(ResumeSection):
     name: str
     description: List[str] = Field(default_factory=list)
+    start: str
+    end: Optional[str] = None
     technologies: List[str] = Field(default_factory=list)
     link: Optional[str] = None
-    date: Optional[str] = None
 
 class Skill(ResumeSection):
-    name: str
-    featured_skills: List[str] = Field(default_factory=list)
+    category: str
+    featured: List[str] = Field(default_factory=list)
 
 class ResumeConfig(BaseModel):
     basic_details: BasicDetails
@@ -49,3 +52,4 @@ class ResumeConfig(BaseModel):
     work: List[Job] = Field(default_factory=list)
     projects: List[Project] = Field(default_factory=list)
     skills: List[Skill] = Field(default_factory=list)
+    location: Optional[str] = None

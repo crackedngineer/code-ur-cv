@@ -1,122 +1,57 @@
 basic_details:
-  name: Subhomoy Roy Choudhury
-  title: Software Engineer
-  email: subhomoyrchoudhury@gmail.com
-  phone: "+91 9163855365"
-  website: "https://github.com/crackedngineer/"
-  github: "github.com/crackedngineer"
-  linkedin: "linkedin.com/in/subhomoy-roy-choudhury"
+  name: Jane Doe
+  email: jane@example.com
+  phone: "+1 555 000 0000"
+  location: San Francisco, CA
+  linkedin: linkedin.com/in/janedoe
+  github: github.com/janedoe
 
 summary: >
-  Backend-focused Software Engineer with 3+ years of experience designing and shipping
-  low-latency, high-availability APIs and distributed systems. Strong expertise in Python
-  and Golang, building scalable backend services, event-driven pipelines, and production-
-  grade cloud-native systems. Proven ability to own features end-to-end in fast-paced environments.
+  Full-stack engineer with 5 years of experience building scalable web applications.
 
 education:
-  - institution: Institute of Engineering and Management, Kolkata
-    location: West Bengal, India
-    degree: Bachelor of Technology in Electronics and Communication
-    gpa: "9.34/10.0"
-    duration: "Aug 2018 -- July 2022"
+  - institution: University of California, Berkeley
+    degree: B.S. Computer Science
+    year: 2019
+    gpa: "3.8/4.0"
+    additional_information:
+      - Dean's List for 6 semesters
+    location: Berkeley, CA
 
 work:
-  - company: Mott MacDonald
-    location: Bangalore, India
-    role: Digital Engineer
-    duration: "September 2024 -- Present"
+  - company: Acme Corp
+    location: San Francisco, CA
+    role: Senior Engineer
+    start: Jan 2021
+    end: Present
     achievements:
-      - Designed and maintained backend platform services supporting Kubernetes-based DevOps infrastructure.
-      - Built a Kubernetes operator in Golang to automate project provisioning and namespace lifecycle management.
-      - Engineered end-to-end automation from ServiceNow to Plural to Kubernetes, reducing request SLA by 80%.
-      - Provisioned infrastructure using Terraform and managed Azure services including Blob Storage and PostgresDB.
+      - Led migration to microservices, reducing latency by 40%
+      - Mentored a team of 4 junior engineers
     technologies:
       - Python
-      - Golang
-      - Kubernetes
-      - Terraform
-      - Azure
-      - PostgreSQL
-
-  - company: Fynd
-    location: Bangalore, India
-    role: Software Development Engineer 1
-    duration: "July 2022 -- September 2024"
-    achievements:
-      - Designed and maintained scalable REST APIs powering the Core Catalog Service for JioMart Partners (B2B).
-      - Built RBAC-based authentication and authorization systems to enforce secure access control.
-      - Developed high-throughput product ingestion pipelines using Apache Kafka for low-latency bulk imports.
-      - Optimized backend queries and caching layers (Redis), improving system performance by 30%.
-      - Collaborated cross-functionally with product and frontend teams to ship production-ready features.
-    technologies:
-      - Python
-      - NodeJS
-      - Kafka
-      - PostgreSQL
-      - MongoDB
-      - Redis
-      - Nginx
-
+      - Docker
+      - AWS
+  
 projects:
-  - name: iLoveGithub
-    link: "https://github.com/crackedngineer/iLoveGithub"
-    duration: "May 2025 -- Present"
+  - name: codeurcv
+    link: "https://github.com/crackedngineer/codeurcv"
+    start: March 2026
+    end: Present
     description:
-      - Architected scalable backend services in Python to transform GitHub repositories into AI-powered utilities.
-      - Designed RESTful APIs with authentication and containerized deployments using Docker.
-      - Implemented CI/CD pipelines and automated release workflows for production-grade delivery.
+      - An open-source resume builder that generates LaTeX resumes from YAML input.
+      - Built with a plugin architecture for easy customization.
     technologies:
       - Python
-      - NextJS
-      - Supabase
-      - Docker
       - CI/CD
-
-  - name: linkplant
-    link: "https://github.com/crackedngineer/linkplant"
-    duration: "November 2025 -- Present"
-    description:
-      - Built a GitHub Action to automate static site generation and deployment using Python and Jinja.
-      - Designed reusable CI/CD workflows enabling zero-infrastructure hosting.
-    technologies:
-      - Python
-      - Jinja
-      - GitHub Actions
-
-  - name: Proxmox Homelab
-    link: "https://github.com/crackedngineer/homelab-infrastructure"
-    duration: "May 2023 -- Present"
-    description:
-      - Designed and managed Kubernetes clusters using Terraform and GitOps (ArgoCD).
-      - Implemented containerized workloads with secure networking and automation-first infrastructure practices.
-    technologies:
-      - Terraform
-      - Kubernetes
-      - Docker
-      - ArgoCD
-      - Tailscale
 
 skills:
-  - name: Backend
-    featured_skills:
-      - Python
-      - Golang
-      - NodeJS
-      - REST APIs
-      - Microservices
-  - name: Databases
-    featured_skills:
-      - PostgreSQL
-      - MongoDB
-      - Redis
-  - name: Infrastructure
-    featured_skills:
-      - Kubernetes
-      - Docker
-      - Terraform
-      - Azure
-      - CI/CD
-      - GitOps
-  - name: Messaging
-    featured_skills:
-      - Apache Kafka
+  - category: Languages
+    featured: 
+        - Python
+        - TypeScript
+        - Go
+  - category: Tools
+    featured: 
+        - Docker
+        - Kubernetes
+        - PostgreSQL
