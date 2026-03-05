@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.4.0](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.3.0...codeurcv-v0.4.0) (2026-03-05)
+
+
+### Features
+
+* update CLI options to improve resume generation; add output filename and template overrides ([c298c24](https://github.com/crackedngineer/codeurcv/commit/c298c247e3815c833237fa436611103c93d97701))
+* update GitHub Action section in README; streamline automation instructions and link to official action ([b733290](https://github.com/crackedngineer/codeurcv/commit/b7332906234fb12fc758484aff160c350f7db673))
+* update README with project overview, features, and quickstart guide; add CONTRIBUTING and SETUP documentation; include LICENSE file ([ed65f38](https://github.com/crackedngineer/codeurcv/commit/ed65f386904ef9e41a247cb12501be255dc51792))
+
+
+### Bug Fixes
+
+* update example configuration filename in README; change from resume.yml to config.yml for consistency ([253e6a4](https://github.com/crackedngineer/codeurcv/commit/253e6a4455ea723c69d7b7be592008dbdafa22ee))
+
 ## [0.3.0](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.2.0...codeurcv-v0.3.0) (2026-03-04)
 
 
