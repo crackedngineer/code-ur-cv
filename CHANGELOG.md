@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.4.0...codeurcv-v0.4.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* update resume generation parameters and version; modify output filename handling and increment package version to 0.3.0 ([efa6651](https://github.com/crackedngineer/codeurcv/commit/efa66513743b9949c21af79b95fd3f3eb819d9bb))
+
 ## [0.4.0](https://github.com/crackedngineer/codeurcv/compare/codeurcv-v0.3.0...codeurcv-v0.4.0) (2026-03-05)
 
 
