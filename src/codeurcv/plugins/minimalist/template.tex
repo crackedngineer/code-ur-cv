@@ -154,7 +154,9 @@
 \resumeSubHeadingListStart
 \BLOCK{for proj in projects}
   \resumeProjectHeading
-    {\href{ {\VAR{proj.link}} }{ \textbf{\VAR{proj.name}} }((* if proj.technologies *)) $|$ \emph{{\VAR{proj.technologies | join(', ')}}}((* endif *))}
+    {\href{ {\VAR{proj.link}} }{ \textbf{\VAR{proj.name}} }
+    \BLOCK{if proj.technologies} $|$ \emph{{\VAR{proj.technologies | join(', ')}}} \BLOCK{endif}
+    }
     { {\VAR{proj.start}} - {\VAR{proj.end}} }
   \resumeItemListStart
     \BLOCK{for item in proj.description}

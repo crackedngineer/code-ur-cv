@@ -19,3 +19,4 @@ config.ini
 Pipfile.*
 
 output/*
+config.yml
